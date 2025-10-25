@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/43_KeyWordsAndExpressions/43_KeyWordsAndExpressions.iml" filepath="$PROJECT_DIR$/43_KeyWordsAndExpressions/43_KeyWordsAndExpressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/44_if_else_Statement/44_if_ifElse_Else/44_if_ifElse_Else.iml" filepath="$PROJECT_DIR$/44_if_else_Statement/44_if_ifElse_Else/44_if_ifElse_Else.iml" />
+      <module fileurl="file://$PROJECT_DIR$/49_Methods/49_Methods.iml" filepath="$PROJECT_DIR$/49_Methods/49_Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/53_Method_Overloading/53_Method_Overloading.iml" filepath="$PROJECT_DIR$/53_Method_Overloading/53_Method_Overloading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/57_Switch/57_Switch.iml" filepath="$PROJECT_DIR$/57_Switch/57_Switch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/61_Loop/61_Loop.iml" filepath="$PROJECT_DIR$/61_Loop/61_Loop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/65_While_Loop/65_While_Loop.iml" filepath="$PROJECT_DIR$/65_While_Loop/65_While_Loop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/71_Parsing_Values/71_Parsing_Values.iml" filepath="$PROJECT_DIR$/71_Parsing_Values/71_Parsing_Values.iml" />
+      <module fileurl="file://$PROJECT_DIR$/74_UserInputChallenge/74_UserInputChallenge.iml" filepath="$PROJECT_DIR$/74_UserInputChallenge/74_UserInputChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/75_Challenge/75_Challenge.iml" filepath="$PROJECT_DIR$/75_Challenge/75_Challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/76_Challenge/76_Challenge.iml" filepath="$PROJECT_DIR$/76_Challenge/76_Challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/78_Gather/78_Gather.iml" filepath="$PROJECT_DIR$/78_Gather/78_Gather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/80_BankAccChallenge/80_BankAccChallenge.iml" filepath="$PROJECT_DIR$/80_BankAccChallenge/80_BankAccChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Explore/Explore.iml" filepath="$PROJECT_DIR$/Explore/Explore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/42_JavaIntro/JavaIntro.iml" filepath="$PROJECT_DIR$/42_JavaIntro/JavaIntro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/43_KeyWordsAndExpressions/Method/Method.iml" filepath="$PROJECT_DIR$/43_KeyWordsAndExpressions/Method/Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rith/Rith.iml" filepath="$PROJECT_DIR$/Rith/Rith.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Songs/Songs.iml" filepath="$PROJECT_DIR$/Songs/Songs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/44_if_ifElse_Else/if_ifElse_Else.iml" filepath="$PROJECT_DIR$/44_if_ifElse_Else/if_ifElse_Else.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/my_java.iml" filepath="$PROJECT_DIR$/.idea/my_java.iml" />
+    </modules>
+  </component>
+</project>
