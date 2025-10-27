@@ -1,7 +1,4 @@
 public class BankAccount {
-    public static void main(String[] args) {
-
-    }
     // Innitialize the constructor
     public BankAccount(int accountNumber, double balance, String accountName, String email, String phoneNumber) {
         this.accountNumber = accountNumber;
