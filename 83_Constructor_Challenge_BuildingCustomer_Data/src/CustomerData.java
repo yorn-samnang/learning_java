@@ -27,7 +27,6 @@ public class CustomerData {
         this("Default Name", 1000, "noemail@example.com");
     }
 
-
     public CustomerData(String name, String emailAddress) {
         this.name = name;
         this.emailAddress = emailAddress;
