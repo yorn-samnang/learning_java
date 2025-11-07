@@ -1,0 +1,10 @@
+Method	Purpose	Example
+charAt(i)	Get character at index	"Hi".charAt(1) → i
+substring(a, b)	Get part of string	"Hello".substring(1, 4) → ell
+join("-", a, b, c)	Join strings with separator	String.join("-", "A", "B") → A-B
+concat(str)	Add another string	"Hi".concat("!") → Hi!
+replace('a', 'o')	Replace characters	"banana".replace('a', 'o') → bonono
+replaceFirst("x", "y")	Replace first match	"xxX".replaceFirst("x", "y") → yxX
+replaceAll("x", "y")	Replace all matches	"xxX".replaceAll("x", "y") → yyX
+repeat(n)	Repeat string	"Hi ".repeat(3) → Hi Hi Hi
+indent(n)	Add spaces to each line	"Hi".indent(4) → " Hi"
