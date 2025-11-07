@@ -3,42 +3,49 @@ import java.time.Period;
 
 public class Main {
     public static void main(String[] args) {
-        Worker jame = new Worker("Jame", "1990-01-01", "2025-12-31");
-        SalariedEmployee jameSalaried = new SalariedEmployee("Jame", "1990-01-01", "2020-12-31", 52000); // past endDate => retired
-        HourlyEmployee jameHourly = new HourlyEmployee("Jame", "1990-01-01", "2025-12-31", 20);
-        jameHourly.addHours(80); // Worked 80 hours
 
-        System.out.println(jame);
-        System.out.println("Jame's age: " + jame.getAge());
-        System.out.println("Jame's bi-weekly pay: $" + jameSalaried.collectPay());
-        System.out.println("Jame has retired? " + jameSalaried.isRetired());
+        SalariedEmployee salariedEmployee = new SalariedEmployee("John Doe", "1980-05-15", null, 52000);
+        System.out.println(salariedEmployee.toString());
+        System.out.println("Age: " + salariedEmployee.getAge());
+        System.out.println("Paycheck: " + salariedEmployee.collectPay());
+        salariedEmployee.retire("2023-12-31");
+        System.out.println("After retirement, Paycheck: " + salariedEmployee.collectPay());
+
+        HourlyEmployee hourlyEmployee = new HourlyEmployee("Jane Smith", "1990-08-20", null, 20);
+        System.out.println(hourlyEmployee.toString());
+        System.out.println("Age: " + hourlyEmployee.getAge());
+        hourlyEmployee.addHours(40);
+        System.out.println("Paycheck: " + hourlyEmployee.collectPay());
+        hourlyEmployee.terminate("2023-12-31");
+        hourlyEmployee.addHours(40);
+        System.out.println("After termination, Paycheck: " + hourlyEmployee.collectPay());
     }
 }
 
 class Worker {
     private String name;
     private LocalDate birthDate;
-    private LocalDate endDate; // last day employed (inclusive)
+    private LocalDate endDate;
 
     public Worker(String name, String birthDate, String endDate) {
         this.name = name;
         this.birthDate = LocalDate.parse(birthDate);
-        this.endDate = LocalDate.parse(endDate);
+        this.endDate = (endDate != null) ? LocalDate.parse(endDate) : null;
     }
 
     public int getAge() {
         return Period.between(this.birthDate, LocalDate.now()).getYears();
     }
 
-    /** Retired if endDate is today or in the past. */
     public boolean isRetired() {
         return endDate != null && !endDate.isAfter(LocalDate.now());
     }
 
     public double collectPay() { return 0.0; }
 
-    /** Set the last day of employment. Also what retire() uses. */
-    public void terminate(String endDate) { this.endDate = LocalDate.parse(endDate); }
+    public void terminate(String endDate) {
+        this.endDate = LocalDate.parse(endDate);
+    }
 
     @Override
     public String toString() {
@@ -51,7 +58,13 @@ class Worker {
     }
 }
 
-class SalariedEmployee extends Worker {
+class Employee extends Worker {
+    public Employee(String name, String birthDate, String endDate) {
+        super(name, birthDate, endDate);
+    }
+}
+
+class SalariedEmployee extends Employee {
     private double annualSalary;
 
     public SalariedEmployee(String name, String birthDate, String endDate, double annualSalary) {
@@ -59,13 +72,14 @@ class SalariedEmployee extends Worker {
         this.annualSalary = annualSalary;
     }
 
-    /** Convenience: retiring is just setting endDate. */
-    public void retire(String retireDate) { terminate(retireDate); }
+    public void retire(String retireDate) {
+        terminate(retireDate);
+    }
 
     @Override
     public double collectPay() {
-        // No pay once retired
-        return isRetired() ? 0.0 : annualSalary / 26.0; // bi-weekly
+        double paycheck = annualSalary / 26.0;
+        return isRetired() ? 0.9 * paycheck : paycheck;
     }
 
     @Override
@@ -74,7 +88,7 @@ class SalariedEmployee extends Worker {
     }
 }
 
-class HourlyEmployee extends Worker {
+class HourlyEmployee extends Employee {
     private double hourlyRate;
     private int hoursWorked;
 
@@ -88,9 +102,9 @@ class HourlyEmployee extends Worker {
 
     @Override
     public double collectPay() {
-        if (isRetired()) return 0.0; // no pay after end date
+        if (isRetired()) return 0.0;
         double payment = hourlyRate * hoursWorked;
-        hoursWorked = 0; // reset after pay
+        hoursWorked = 0;
         return payment;
     }
 
