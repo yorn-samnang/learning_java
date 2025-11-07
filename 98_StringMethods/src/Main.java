@@ -13,7 +13,7 @@ public class Main {
         // get the first char
         char ch = str.charAt(0);
 
-        // get the last char
+//        // get the last char
         char lastCh = str.charAt(length - 1);
 
         // get the index l
@@ -29,5 +29,43 @@ public class Main {
         System.out.printf("First index of 'l': %d%n", firstL);
         System.out.printf("Last index of 'l': %d%n", lastL);
         System.out.printf("Second index of 'l': %d%n", secondL);
+
+
+        // String Methods
+
+        String name = "Samnang";
+
+        // toUpperCase
+        String upperName = name.toUpperCase();
+        System.out.printf("Uppercase: %s%n", upperName);
+
+        // toLowerCase
+        String lowerName = name.toLowerCase();
+        System.out.printf("Lowercase: %s%n", lowerName);
+
+        // toCapitalize
+        String capitalized = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
+        System.out.printf("Capitalized: %s%n", capitalized);
+
+        // Get elements by index
+//        int length = name.length();
+        char lastChar = name.charAt(name.length() - 1);
+        System.out.printf("Last Character of name: %c%n", lastChar);
+
+        // Join
+        String joinedString = String.join("-", "Why", "Love", "is", "Painful");
+        System.out.printf("Joined String: %s%n", joinedString);
+
+        // concat
+        String concatString = name.concat(" Yorn"); // using concat method to concatenate strings (+)
+        System.out.println("Concatenated String: " + concatString);
+
+        // replace
+
+        String replacedString = concatString.replaceFirst("Samnang", "James");
+        System.out.println("Replaced String: " + replacedString);
+
+        // repeat and indent
+        System.out.println((replacedString + "\n").repeat(1000).indent(4));
     }
 }

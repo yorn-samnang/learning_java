@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/100_StringBuilder/100_StringBuilder.iml" filepath="$PROJECT_DIR$/100_StringBuilder/100_StringBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/102_Composition/102_Composition.iml" filepath="$PROJECT_DIR$/102_Composition/102_Composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/43_KeyWordsAndExpressions/43_KeyWordsAndExpressions.iml" filepath="$PROJECT_DIR$/43_KeyWordsAndExpressions/43_KeyWordsAndExpressions.iml" />
       <module fileurl="file://$PROJECT_DIR$/44_if_else_Statement/44_if_ifElse_Else/44_if_ifElse_Else.iml" filepath="$PROJECT_DIR$/44_if_else_Statement/44_if_ifElse_Else/44_if_ifElse_Else.iml" />
       <module fileurl="file://$PROJECT_DIR$/49_Methods/49_Methods.iml" filepath="$PROJECT_DIR$/49_Methods/49_Methods.iml" />
@@ -28,7 +30,6 @@
       <module fileurl="file://$PROJECT_DIR$/Explore/Explore.iml" filepath="$PROJECT_DIR$/Explore/Explore.iml" />
       <module fileurl="file://$PROJECT_DIR$/42_JavaIntro/JavaIntro.iml" filepath="$PROJECT_DIR$/42_JavaIntro/JavaIntro.iml" />
       <module fileurl="file://$PROJECT_DIR$/43_KeyWordsAndExpressions/Method/Method.iml" filepath="$PROJECT_DIR$/43_KeyWordsAndExpressions/Method/Method.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Rith/Rith.iml" filepath="$PROJECT_DIR$/Rith/Rith.iml" />
       <module fileurl="file://$PROJECT_DIR$/Songs/Songs.iml" filepath="$PROJECT_DIR$/Songs/Songs.iml" />
       <module fileurl="file://$PROJECT_DIR$/Challenges/Wall/Wall.iml" filepath="$PROJECT_DIR$/Challenges/Wall/Wall.iml" />
       <module fileurl="file://$PROJECT_DIR$/44_if_ifElse_Else/if_ifElse_Else.iml" filepath="$PROJECT_DIR$/44_if_ifElse_Else/if_ifElse_Else.iml" />

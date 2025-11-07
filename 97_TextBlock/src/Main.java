@@ -34,7 +34,10 @@ public class Main {
         String name = "James";
         int age = 30;
 
-        System.out.printf("Name: %s, %nAge: %d", name, age);
+//        System.out.printf("Name: %s, %nAge: %d", name, age);
+
+        double height = 1.73456;
+        System.out.printf("Height: %.2f meters", height);
 
     }
 }
