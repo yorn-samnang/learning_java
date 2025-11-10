@@ -1,4 +1,5 @@
 public class SmartKitchen {
+    // instance variables
     private CoffeeMaker coffeeMaker;
     private DishWasher dishWasher;
     private Refrigerator refrigerator;
