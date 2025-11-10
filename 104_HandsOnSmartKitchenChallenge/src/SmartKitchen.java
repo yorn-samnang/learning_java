@@ -1,5 +1,12 @@
 public class SmartKitchen {
     // instance variables
+
+    // If an object contains the other object and
+    // the contained object cannot exist without the existence of that object,
+    // then it is called composition.
+
+    // A SmartKitchen has a CoffeeMaker, DishWasher, and Refrigerator.
+
     private CoffeeMaker coffeeMaker;
     private DishWasher dishWasher;
     private Refrigerator refrigerator;
